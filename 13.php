@@ -1,5 +1,5 @@
 <?php
-1111111
+select * from db;
 $a = array();
 // 教学工作情况
 $a[0]['type'] = '教学工作情况';
