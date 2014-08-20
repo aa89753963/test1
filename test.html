@@ -1,0 +1,65 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-CN">
+<head>
+<script src="./jquery.min.js"></script>
+<script>
+//$(document).ready(function(){
+//    alert('123123213213123');
+//});
+$(document).ready(function(){
+    var table = $("#table").html();
+    alert(table);
+});
+</script>
+<title>Table</title>
+<link rel="stylesheet" type="text/css" href="./test.css" />
+</head>
+    <body style="">
+    <form action="gettest.php" method="get">
+    	<table border="1"  align="center" class="formtable" id="table">
+    		<caption>中文版自我介绍</caption>
+    		<tr>
+    			<th>姓名:</th>
+    			<td><input type="text" name="name" class="nametext" id="name"></td>
+    		</tr>
+    		<tr>
+    			<th>昵称:</th>
+    			<td><input type="text" name="nicheng" class="nametext"></td>
+    		</tr>
+    		<tr>
+    			<th>密码:</th>
+    			<td><input type="password" name="pwd" class="nametext"></td>
+    		</tr>
+    		<tr>
+    			<th>性别:</th>
+    			<td><label for="1"><input type="radio" value="男" name="sex" id="1">男<label for="0"><input type="radio" value="女" name="sex" id="0">女</td>
+    		
+    		</tr>
+    		<tr>
+    			<th>工作:</th>
+    			<td>
+    				<select name="job">
+  					<option value ="jqury">jqury</option>
+  					<option value ="php">php</option>
+  					<option value="mysql">mysql</option>
+				</select>
+    			</td>
+    		</tr>
+    		<tr>
+    			<th>关键:</th>
+    			<td><label for="2"><input type="checkbox" name="keywords[]" value="jqury" id="2">jquery<label for="3"><label for="i"><input type="checkbox" name="keywords[]" value="php" id="3">php<label for="4"><input type="checkbox" name="keywords[]" value="mysql" id="4">mysql</td>
+    			
+    		</tr>
+    		<tr>
+    			<th>自我介绍:</th>
+    			<td><textarea name="content"></textarea></td>
+    		</tr>
+    		<tr>
+    			<td><input type="submit" value="提交" class="button"></td>
+    			<td><input type="reset" value="重置" class="button"></td>
+    		</tr>
+    	</table>
+    </div>
+    </form>
+    </body>
+</html>

@@ -1,0 +1,15 @@
+<script language="javascript"> 
+    function myDOMInspector(){
+	var myItem = document.getElementById("myDearFood");
+	alert(myItem.parentNode.tagName);
+    }
+</script>
+<body onload="myDOMInspector()">
+    <ul>
+	<li>糖醋排骨</li>
+	<li>圆笼粉蒸肉</li>
+	<li>泡菜鱼</li>
+	<li id="myDearFood">板栗烧鸡</li>
+	<li>麻婆豆腐</li>
+    </ul>
+</body>

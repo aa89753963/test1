@@ -1,0 +1,45 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-CN">
+<head>
+<title>新建网页</title>
+</head>
+    <body>
+    	<script>
+    	var i = 1;
+    	while(i < 10){
+    		document.write('<table border="2">');
+    		var j = 1;
+    		while(j <= i){
+    			//var
+    			document.write(j + '*' + i + '=' + (j * i) + '&nbsp');
+    			j++;
+    		}
+    		i++;
+    	}
+    	
+
+
+
+    	</script>
+    	<br />
+--------------------------------------------------------------------------------------------------
+<table>
+    	<script>
+    		var aa = new Array(1, 2, 3, 4, 5, 6, 7, 8, 9);
+    		var bb = new Array(1, 2, 3, 4, 5, 6, 7, 8, 9);
+    		
+    		for(var i = 0;i < aa.length;i++){
+    			document.write('<tr>');
+    			
+    			for(var j = 0;j <= i;j++){
+    				document.write('<td>');
+    				document.write(bb[j] + '*' + aa[i] + '=' +(aa[i] * bb[j]));
+    			}
+    		}
+    		
+
+
+    	</script>
+</table>  	
+    </body>
+</html>

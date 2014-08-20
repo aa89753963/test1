@@ -1,0 +1,14 @@
+.formtable{
+	border-top-width: 15px;
+ 	border-right-width: 5px;
+ 	border-left-width: 5px;
+ 	width: 600px;
+ 	text-align: center;
+}
+.nametext{
+	background: #33FFCC;
+
+}
+.button{
+	background: url(./img/2.png) no-reqeat left bottom;
+}

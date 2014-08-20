@@ -1,0 +1,43 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-CN">
+<head>
+<title>新建网页</title>
+</head>
+    <body>
+  	
+    	<script type="text/javascript">
+    	function pass(){
+    		var user = document.getElementById('user').value;
+    		var pass1 = document.getElementById('pas1').value;
+    		var pass2 = document.getElementById('pas2').value;
+    		var email = document.getElementById('email').value;
+    		if (user == "") {
+    			alert('用户名不能为空');
+    			return false;
+    		};
+    		if (pass1 == pass2) {
+    			//return true;
+    		}else{
+    			alert('两次输入密码不一致');
+    			return false;	
+    		};
+    		//alert('111');
+    		if (email == "") {
+    			alert('email不能为空');
+    			return false;
+    		};
+    	}
+
+
+    	</script>
+	user:<input type="text" id="user" name="user"/>
+    	<br />
+    	pass1:<input type="password" id="pas1" name="pass"/>
+    	<br />
+    	pass2:<input type="password" id="pas2" name="pass"/>
+    	<br />
+    	email:<input type="text" id="email" name="email" />
+    	<input type="submit" value="OK" id="sub" onclick="return pass()">
+
+    </body>
+</html>
